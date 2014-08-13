@@ -16,6 +16,7 @@
    * [最小生成树(kruskal-邻接表)](graph/spanning-tree/kruskal-adjacency-list.md)
    * [最小生成树(Prim-邻接阵)](graph/spanning-tree/prim-adjacency-matrix.md)
 * [图论—最短路径](graph/shortest-path/shortest-path.md)
+   * [最短路径(多源floyd_warshall-邻接阵)](graph/shortest-path/muilt-floyd_warshall-adjacency-matrix.md)
 * [应用](apply/apply.md)
 * [其他](others/others.md)
 
