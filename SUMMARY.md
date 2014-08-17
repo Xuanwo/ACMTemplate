@@ -4,6 +4,7 @@
 * [几何](geometry/geometry.md)
 * [组合](set/set.md)
 * [结构](structure/structure.md)
+   * [树状数组(BinaryIndexedTree)](structure/binary-indexed-tree.md)
 * [数论](number-theory/number-theory.md)
 * [数值计算](numerical-calculation/numerical-calculation.md)
 * [图论—NP搜索](graph/np-search/np-search.md)
