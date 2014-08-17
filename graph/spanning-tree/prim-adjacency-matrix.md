@@ -1,7 +1,6 @@
 # 最小生成树(Prim-邻接阵)
 
 ## [接口]
-```
 Type prim(int n);
 
 复杂度：O(n^2)
@@ -16,15 +15,13 @@ g[][] 邻接阵
 cnt 判断是否连通
 ans 最小生成树的边权和
 pre[] 树的构造，以父结点表示
-      
-```
 
 ## [代码]
 ```
 typedef int Type;
-const int MaxM = 1005;
-int pre[MaxM], vis[MaxM];
-Type dis[MaxM], g[MaxM][MaxM];
+const int NV = 1005;
+int pre[NV], vis[NV];
+Type dis[NV], g[NV][NV];
 
 void init(int n, int s)
 {
