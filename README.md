@@ -1,4 +1,5 @@
 # 介绍
+作者：[Xuanwo](http://xuanwo.org/)
 
 # 头文件代码
 ```
@@ -27,5 +28,4 @@
 #define eps (1e-8)
 #define inf (1<<28)
 using namespace std;
-
 ```
