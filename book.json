@@ -1,0 +1,42 @@
+{
+    "plugins": [
+        "-mathjax",
+    ],
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "white",
+            "family": "serif",
+            "size": 2
+        },
+    },
+    "links": {
+        "home": false,
+        "about": false,
+        "issues": false,
+        "contribute": false,
+        "sidebar": {
+            "Xuanwo's Blog": "http://xuanwo.org"
+        },
+        "gitbook": false,
+        "sharing": {
+            "google"   : true,
+            "facebook" : true,
+            "twitter"  : true,
+            "weibo"    : true,
+            "qq"       : true,
+            "qrcode"   : true
+        }
+    },
+    "pdf": {
+        "toc": true,
+        "pageNumbers": true,
+        "fontSize": 12,
+        "paperSize": "a4",
+        "margin": {
+            "right": 62,
+            "left": 62,
+            "top": 36,
+            "bottom": 36
+        }
+    }
+}
