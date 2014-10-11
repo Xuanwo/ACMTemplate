@@ -17,7 +17,7 @@ ans 最小生成树的边权和
 pre[] 树的构造，以父结点表示
 
 ## [代码]
-```
+```C++
 typedef int Type;
 const int NV = 1005;
 int pre[NV], vis[NV];

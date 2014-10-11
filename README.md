@@ -2,7 +2,7 @@
 作者：[Xuanwo](http://xuanwo.org/)
 
 # 头文件代码
-```
+```C++
 #include<cstdio>
 #include<cstdlib>
 #include<cstring>
