@@ -6,6 +6,6 @@ site_author: Xuanwo
 site_favicon: favicon.ico
 pages:
 - ['index.md', '简介']
-- ['number-theory.md', '数论','质因数','GCD']
+- ['number-theory.md', '数论','质因数']
 
 copyright: Copyright &copy; 2015, <a href="http://xuanwo.org/">Xuanwo</a>.
