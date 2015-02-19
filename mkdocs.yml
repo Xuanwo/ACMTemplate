@@ -6,6 +6,6 @@ site_author: Xuanwo
 site_favicon: favicon.ico
 pages:
 - ['index.md', '简介']
-- ['number-theory/gcd.md', '数论', '辗转相除法']
+- ['number-theory.md', '数论']
 
 copyright: Copyright &copy; 2015, <a href="http://xuanwo.org/">Xuanwo</a>.
