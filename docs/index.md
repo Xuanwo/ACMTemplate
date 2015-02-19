@@ -1,17 +1,2 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](http://mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+# 欢迎来到史上最弱ACM模板
+本模板的定位是本弱不断学习，不断成长的一个自我完善过程，从最简单最常用的算法开始写起，也算是一个对已经掌握的东西的回顾和总结。
