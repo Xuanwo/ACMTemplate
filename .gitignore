@@ -1,0 +1,17 @@
+sdcamp.*.pdf
+sdcamp.*.mobi
+sdcamp.*.epub
+sdcamp.*.html
+sdcamp.*.markdown
+*.zip
+sdcamp-*.epub
+*.pdf
+!contents/img/cover.pdf
+!ebooks/cover.pdf
+*.swp
+latex/*
+!latex/README
+epub/temp
+*~
+.#*
+*.epub
