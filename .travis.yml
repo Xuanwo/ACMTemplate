@@ -1,25 +1,23 @@
 language: cpp
 before_script:
-  - sudo apt-get install libglib2.0-dev
-  - git clone --recursive git://github.com/fletcher/MultiMarkdown-4.git
-  - cd MultiMarkdown-4
-  - make
-  - export PATH=$PATH:`pwd`
-  - uname -a
-  - lsb_release -a
-  - sudo apt-get install ttf-arphic-gbsn00lp ttf-arphic-ukai ttf-wqy-microhei ttf-wqy-zenhei
-  - sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra
-
+- sudo apt-get install libglib2.0-dev
+- git clone --recursive git://github.com/fletcher/MultiMarkdown-4.git
+- cd MultiMarkdown-4
+- make
+- export PATH=$PATH:`pwd`
+- uname -a
+- lsb_release -a
+- sudo apt-get install ttf-arphic-gbsn00lp ttf-arphic-ukai ttf-wqy-microhei ttf-wqy-zenhei
+- sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra
 script:
-  - cd ..
-  - which multimarkdown
-  - chmod +x mmd2bok
-  - ./mmd2bok
-
+- cd ..
+- which multimarkdown
+- chmod +x mmd2bok
+- "./mmd2bok"
 deploy:
   provider: releases
-  api_key: "263ac0fb8628e2b03ad8d8a298b78baf560bd343"
-  file: "acmtemplate.pdf"
-  skip_cleanup: true
+  api_key:
+    secure: DdAALCujs6Cy8uR27xcP13J1UDkrA+tDp+3zqcr+4Gve/CRMtQtyLlbJP1dLU8nUjYNm+dBsNEL7hymFkiKaGyC4evui9GasOgJG8KaSaFHf6hhqHzoG3KsNfMP0ZcqCL6FYB2wRRClNCgNCQ1o587JVgUNsYuy+nRjM3QDfc0A=
+  file: acmtemplate.pdf
   on:
-    tags: true
+    repo: Xuanwo/ACMTemplate
