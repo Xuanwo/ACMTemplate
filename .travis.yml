@@ -18,7 +18,7 @@ script:
 
 deploy:
   provider: releases
-  api_key: "263ac0fb8628e2b03ad8d8a298b78baf560bd343"
+  api_key: "fd67b07df4670a4b3637dfceda6e0d7b7c83262d"
   file: "acmtemplate.pdf"
   skip_cleanup: true
   on:
