@@ -1,13 +1,10 @@
 language: cpp
 before_script:
   - sudo apt-get install libglib2.0-dev
-  #- git clone --recursive git://github.com/fletcher/peg-multimarkdown.git
-  #- cd peg-multimarkdown
   - git clone --recursive git://github.com/fletcher/MultiMarkdown-4.git
   - cd MultiMarkdown-4
   - make
   - export PATH=$PATH:`pwd`
-# here you can check os environment, it is ubuntu natty
   - uname -a
   - lsb_release -a
   - sudo apt-get install ttf-arphic-gbsn00lp ttf-arphic-ukai ttf-wqy-microhei ttf-wqy-zenhei
