@@ -16,8 +16,9 @@ script:
 - "./mmd2bok"
 deploy:
   provider: releases
-  user: DdAALCujs6Cy8uR27xcP13J1UDkrA+tDp+3zqcr+4Gve/CRMtQtyLlbJP1dLU8nUjYNm+dBsNEL7hymFkiKaGyC4evui9GasOgJG8KaSaFHf6hhqHzoG3KsNfMP0ZcqCL6FYB2wRRClNCgNCQ1o587JVgUNsYuy+nRjM3QDfc0A=
-  file: latex/acmtemplate.pdf
+  api_key:
+    secure: O8zb4ytQQfLTFPA/F9UkhLIkUIOhGInqdh8hOjA6gzAt130cUTJtd0zxDadpRfRiH3P7RpPcnJdiGRbJh47OrFY3yg38QiOYDR72vZRPSY91a+jDXXc/2Ouqu3dvASJCl4SBoGK/t5LdpuU44fDai6ubs3T7Cf61KPKJWzByBcY=
+  file: acmtemplate.pdf
   skip_cleanup: true
   on:
     repo: Xuanwo/ACMTemplate
