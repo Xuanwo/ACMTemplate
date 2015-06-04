@@ -28,15 +28,25 @@
 \definecolor{colorsubsection}{RGB}{139,0,0} % DarkRed
 \definecolor{colorheader}{RGB}{70,130,180} % SteelBlue
 
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
 \lstset{
 language=C++,
-basicstyle=\small\ttfamily,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
 numbers=left,
-numbersep=5pt,
-xleftmargin=20pt,
-frame=tb,
-framexleftmargin=20pt
-}
+numberstyle=\tiny\color{black},
+stepnumber=2,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
 
 \titleformat{\section}
 {\color{colorsection}\normalfont\Large\bfseries}
@@ -133,26 +143,27 @@ framexleftmargin=20pt
 	\caption{#1}
 \end{figure}}
 
+
 % below for code syntax highlight
-\usepackage{fancyvrb}
+%\usepackage{fancyvrb}
 %\DefineShortVerb[commandchars=\\\{\}]{\|}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{frame=leftline,numbers=left,gobble=2,numbersep=2pt,commandchars=\\\{\},frame=leftline}
+%\DefineVerbatimEnvironment{Highlighting}{Verbatim}{frame=leftline,numbers=left,gobble=2,numbersep=2pt,commandchars=\\\{\},frame=leftline}
 % Add ',fontsize=\small' for more characters per line
-\newenvironment{Shaded}{}{}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
-\newcommand{\RegionMarkerTok}[1]{{#1}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
-\newcommand{\NormalTok}[1]{{#1}}
+%\newenvironment{Shaded}{}{}
+%\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+%\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+%\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+%\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+%\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+%\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+%\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+%\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+%\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+%\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+%\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+%\newcommand{\RegionMarkerTok}[1]{{#1}}
+%\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+%\newcommand{\NormalTok}[1]{{#1}}
 % end of code syntax highlight
 
 \newcounter{tab}[chapter]
