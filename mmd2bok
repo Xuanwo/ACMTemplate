@@ -3,9 +3,9 @@ cd latex
 cp -rf ../template/* .
 cp -rf ../contents/img .
 #ls -al img
-multimarkdown -t latex meta.txt ../contents/0-preface*.markdown -o preface.tex
-multimarkdown -t latex meta.txt ../contents/1-chapter*.markdown -o chapters.tex
-multimarkdown -t latex meta.txt ../contents/2-appendix*.markdown -o appendix.tex
+multimarkdown -t latex meta.txt ../contents/0-preface*.md -o preface.tex
+multimarkdown -t latex meta.txt ../contents/1-chapter*.md -o chapters.tex
+multimarkdown -t latex meta.txt ../contents/2-appendix*.md -o appendix.tex
 if [ "X$OS" == "XWindows_NT" ]; then
 	echo "windows platform"
 	cp template-win.tex acmtemplate.tex
