@@ -5,6 +5,8 @@ branches:
     - master
 
 before_script:
+- cp YaHei-Consolas-Hybrid.ttf ~/.fonts
+- fc-cache -fv
 - sudo apt-get install libglib2.0-dev
 - git clone --recursive git://github.com/fletcher/MultiMarkdown-4.git
 - cd MultiMarkdown-4
