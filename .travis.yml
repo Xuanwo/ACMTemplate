@@ -1,4 +1,9 @@
 language: cpp
+
+branches:
+  only:
+    - master
+
 before_script:
 - sudo apt-get install libglib2.0-dev
 - git clone --recursive git://github.com/fletcher/MultiMarkdown-4.git
@@ -14,6 +19,7 @@ script:
 - which multimarkdown
 - chmod +x mmd2bok
 - "./mmd2bok"
+
 deploy:
   provider: releases
   api_key:
