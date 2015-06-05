@@ -2,7 +2,7 @@
 
 ## GCD
 
-```
+```cpp
 #include <cstdio>
 
 int main()
