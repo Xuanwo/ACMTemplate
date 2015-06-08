@@ -1,4 +1,49 @@
 # 前言
 这是TopIdiots队的ACM-ICPC代码模板。
 
-## 格式
+## 格式要求
+1. 所有代码要求使用AStyleFormat进行格式化。
+2. 所有模板需给出输出参数以及输出参数，并且尽可能的标出时间复杂度。
+3. 由于使用了XeLaTex进行编译，所以所有的代码块需表明使用`c++`，否则无法高亮。
+4. 所有函数名，变量名力求有意义，便于理解。
+5. 对其他函数有依赖的，应当在代码最开始以注释的形式标明。
+
+## 使用须知
+1. 所有函数要求为整型的，均返回int；要求为浮点型的，均返回double。使用时请自行修改。
+
+## 头文件
+```c++
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <cmath>
+#include <ctime>
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+#include <deque>
+#include <list>
+#include <set>
+#include <map>
+#include <stack>
+#include <queue>
+#include <numeric>
+#include <iomanip>
+#include <bitset>
+#include <sstream>
+#include <fstream>
+#define debug puts("-----")
+
+typedef long long int ll;
+const double pi = acos(-1.0);
+const double eps = 1e-8;
+const int inf = 0x3f3f3f3f;
+const ll INF = 0x3f3f3f3f3f3f3f3fLL;
+using namespace std;
+
+int main()
+{
+    return 0;
+}
+```

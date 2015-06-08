@@ -1,14 +1,13 @@
 # 数论
 
 ## GCD
+输入参数：两个数a，b
+返回参数：a和b的最大公约数
+时间复杂度：
 
 ```c++
-#include <cstdio>
-#include <iostream>
-
-int main()
+int gcd(int a, int b)
 {
-    printf("%d", 123);
-    return 0;
+    return b==0?a:gcd(a%b,a);
 }
 ```
