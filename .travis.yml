@@ -7,7 +7,6 @@ branches:
 before_script:
 - sudo cp YaHei-Consolas-Hybrid.ttf /usr/share/fonts
 - sudo fc-cache -fv
-- fc-list :lang=zh-cn
 - sudo apt-get install libglib2.0-dev
 - git clone --recursive git://github.com/fletcher/MultiMarkdown-4.git
 - cd MultiMarkdown-4
@@ -17,6 +16,7 @@ before_script:
 - lsb_release -a
 - sudo apt-get install ttf-arphic-gbsn00lp ttf-arphic-ukai ttf-wqy-microhei ttf-wqy-zenhei
 - sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra
+
 script:
 - cd ..
 - which multimarkdown
