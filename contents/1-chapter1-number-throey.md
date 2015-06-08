@@ -8,6 +8,6 @@
 ```c++
 int gcd(int a, int b)
 {
-    return b==0?a:gcd(a%b,a);
+    return b == 0 ? a : gcd(a%b ,a);
 }
 ```
