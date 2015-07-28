@@ -69,23 +69,47 @@ int Gcd(int a, int b)
 时间复杂度：
 
 ```c++
-const long N = 200000;
-long prime[N] = {0}, num_prime = 0;
-int isNotPrime[N] = {1, 1};
-int main()
+const int NP = 1000005;
+int ispri[NP] = {}, prime[NP], pcnt = 0;
+void getprime()
 {
-    for (long i = 2 ; i < N ; i ++)
-    {
-        if (! isNotPrime[i])
-            prime[num_prime ++] = i;
-        for (long j = 0 ; j < num_prime && i * prime[j] <  N ; j ++)
+    ispri[0] = ispri[1] = 1;
+    for (long long i = 2; i < NP; i++)
+        if (ispri[i] == 0)
         {
-            isNotPrime[i * prime[j]] = 1;
-            if ( !(i % prime[j] ) )
-                break;
+            prime[++pcnt] = i;
+            for (long long j = i * i; j < NP; j += i)
+                ispri[j] = 1;
         }
-    }
-    return 0;
+}
+```
+
+## 分解质因数
+
+前提要求：
+要求给出素数数组prime
+
+输入参数：无
+
+返回参数：
+a数组 中存放质因数的种数
+
+时间复杂度：
+
+```c++
+int a[1000005] = {};
+void pdec(int n)
+{
+    int num = n;
+    for (int i = 1; prime[i]*prime[i] <= n; i++)
+        if (n % prime[i] == 0)
+        {
+            n /= prime[i];
+            while (n % prime[i] == 0) n /= prime[i];
+            a[num]++;
+            if (n == 1) break;
+        }
+    if (n > 1) a[num]++;
 }
 ```
 
