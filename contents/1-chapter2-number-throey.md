@@ -6,8 +6,6 @@
 
 返回参数：a和b的最大公约数
 
-时间复杂度：
-
 ```c++
 int gcd(int a, int b)
 {
@@ -19,7 +17,7 @@ int gcd(int a, int b)
 
 输入参数：已知a，b，求一组x，y使得p*a+q*b=Gcd(a,b)
 
-返回参数：r(r为零时，说明存在)
+输出参数：r(r为零时，说明存在)
 
 时间复杂度：
 
@@ -44,9 +42,7 @@ int exGcd(int a, int b, int &x, int &y)
 
 输入参数：两个数a，b
 
-返回参数：a和b的最大公约数
-
-时间复杂度：
+输出参数：a和b的最大公约数
 
 ```c++
 int Gcd(int a, int b)
@@ -64,9 +60,7 @@ int Gcd(int a, int b)
 
 输入参数：无
 
-返回参数：素数数组
-
-时间复杂度：
+输出参数：素数数组
 
 ```c++
 const int NP = 1000005;
@@ -91,10 +85,8 @@ void getprime()
 
 输入参数：无
 
-返回参数：
+输出参数：
 a数组 中存放质因数的种数
-
-时间复杂度：
 
 ```c++
 int a[1000005] = {};
@@ -117,9 +109,7 @@ void pdec(int n)
 
 输入参数：底数A，幂次n
 
-返回参数：rslt（A的n次方）
-
-时间复杂度：
+输出参数：rslt（A的n次方）
 
 ```c++
 int qPow(int A, int n)

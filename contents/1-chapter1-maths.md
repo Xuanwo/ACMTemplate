@@ -16,8 +16,6 @@ res = -1, 表示无解。
 res = 0, 表示有解。
 res > 0, 表示有无数解。
 
-复杂度：O(N^3)
-
 ```c++
 const int maxn = 205;
 double a[maxn][maxn] = {0}, ans[maxn] = {0};
