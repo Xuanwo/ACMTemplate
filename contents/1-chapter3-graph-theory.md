@@ -22,7 +22,7 @@ void init()
     tol = 0;
     memset(head, -1, sizeof(head));
 }
-//加边，单向图三个参数，双向图四个参数
+//加边，单向边三个参数，双向边四个参数
 void addedge(int u, int v, int w, int rw = 0)
 {
     edge[tol].to = v;
@@ -37,7 +37,7 @@ void addedge(int u, int v, int w, int rw = 0)
     head[v] = tol++;
 }
 //输入参数：起点、终点、点的总数
-//点的编号没有影响，只要输入点的总数
+//点的编号没有影响，只要输入点的总数（N的值只需大于点数之和）
 int sap(int start, int end, int N)
 {
     memset(gap, 0, sizeof(gap));
