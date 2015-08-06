@@ -15,9 +15,7 @@ a[] 存储数据
 ### 一维RMQ
 
 ```c++
-/*
-下标从1开始
-*/
+//下标从1开始
 const int NV = 50005;
 const int NVB = 20;
 int mx[NV][NVB], mn[NV][NVB], a[NV];
