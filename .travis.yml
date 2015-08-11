@@ -20,8 +20,8 @@ before_script:
 script:
 - cd ..
 - which multimarkdown
-- chmod +x mmd2bok
-- "./mmd2bok"
+- chmod +x mmd2bok.sh
+- "./mmd2bok.sh"
 
 deploy:
   provider: releases
