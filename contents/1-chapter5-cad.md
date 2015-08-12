@@ -122,7 +122,7 @@ struct line
     {
         return sgn(det(p - s, t - s)) == 0;
     }
-    //点在线段上
+    //点在线段上(结合判断点在线段上不含端点，可以用于判断是否为顶点相连接)
     bool ispointonseg(const point &p) const
     {
         return ispointonline(p) && sgn(dot(p - s, p - t)) <= 0;
