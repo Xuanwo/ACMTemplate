@@ -107,39 +107,35 @@ void pdec(int n)
 
 ## 快速幂
 
+前置需求：const变量mod
+
 输入参数：底数A，幂次n
 
 输出参数：rslt（A的n次方）
 
 ```c++
-int qPow(int a, int n)
+ll qPow(ll a, ll b)
 {
-    if (n == 0) return 1;
-    int rslt = 1;
-
-    while (n)
-    {
-        if (n & 1) //如果n为奇数
-        {
-            rslt *= a;
-        }
-        a *= a;
-        n >>= 1;
-    }
-    return rslt;
+    if(b<0) return 0;
+    ll ret = 1;
+    a %= mod;
+    for(; b; b>>=1,a=(a*a)%mod)
+        if(b&1)
+            ret = (ret*a)%mod;
+    return ret;
 }
 ```
 
 ## 求逆元（费马小定理）
 
-需求函数：快速幂qPow
+前置需求：快速幂qPow
 
 输入参数：待求数a，模数（必须为质数）mod
 
 输出参数：这个数的逆元
 
 ```c++
-int inv(int a)
+ll inv(ll a)
 {
     return qPow(a, mod-2);
 }
