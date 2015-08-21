@@ -112,7 +112,7 @@ void pdec(int n)
 输出参数：rslt（A的n次方）
 
 ```c++
-int qPow(int A, int n)
+int qPow(int a, int n)
 {
     if (n == 0) return 1;
     int rslt = 1;
@@ -121,13 +121,27 @@ int qPow(int A, int n)
     {
         if (n & 1) //如果n为奇数
         {
-            rslt *= A;
+            rslt *= a;
         }
-        A *= A;
+        a *= a;
         n >>= 1;
     }
     return rslt;
 }
 ```
 
+## 求逆元（费马小定理）
+
+需求函数：快速幂qPow
+
+输入参数：待求数a，模数（必须为质数）mod
+
+输出参数：这个数的逆元
+
+```c++
+int inv(int a)
+{
+    return qPow(a, mod-2);
+}
+```
 
