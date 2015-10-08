@@ -53,4 +53,19 @@ inline int solve(double a[][maxn], bool l[], double ans[], const int& n) {
 }
 ```
 
+## long long相乘防溢出
+
+输入参数：
+a,b   相乘两数
+mod   模数
+
+返回参数：
+(a*b)%mod
+
+```c++
+ll mult_mod(ll a,ll b,ll mod) //(a*b)%mod a,b,mod<2^63
+{
+    return (a*b-(ll)(a/(long double)mod*b+1e-3)*mod+mod)%mod;
+}
+```
 
