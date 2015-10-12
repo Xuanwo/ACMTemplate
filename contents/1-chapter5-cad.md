@@ -82,10 +82,10 @@ R为外接圆半径,r为内切圆半径
 1. 全面积 T=PIr(2h+r0),h为球冠高,r0为球冠底面半径
 2. 体积 V=2PIr^2h/3
 Euler的任意四面体体积公式（已知边长求体积）
-![Euler-si-sample](contents/img/cg/Euler-si-sample.png)
-![Euler-si-formula](contents/img/cg/Euler-si-formula.png)
+![Euler-si-sample](img/cg/Euler-si-sample.png)
+![Euler-si-formula](img/cg/Euler-si-formula.png)
 已知4点坐标求体积（其中四个点的坐标分别为（x1,y1,z1）,（x2,y2,z2）,（x3,y3,z3）,（x4,y4,z4））
-![four-point-cal-v](contents/img/cg/four-point-cal-v.png)
+![four-point-cal-v](img/cg/four-point-cal-v.png)
 
 ## 几何模板
 ```c++
